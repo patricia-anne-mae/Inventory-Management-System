@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="382.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainScreenController">
+    <children>
+        <AnchorPane layoutX="9.0" layoutY="35.0" prefHeight="312.0" prefWidth="383.0" style="-fx-border-color: black; -fx-border-radius: 5;">
+            <children>
+                <Label layoutX="14.0" layoutY="14.0" text="Parts" />
+                <TableView fx:id="MainPartsTable" layoutX="10.0" layoutY="43.0" prefHeight="200.0" prefWidth="364.0">
+                    <columns>
+                        <TableColumn fx:id="MainPartID" prefWidth="75.0" text="Part ID" />
+                        <TableColumn fx:id="MainPartName" prefWidth="75.0" text="Part Name" />
+                        <TableColumn fx:id="MainPartInv" prefWidth="101.0" text="Inventory Level" />
+                        <TableColumn fx:id="MainPartPrice" prefWidth="112.0" text="Price/Cost Per Unit" />
+                    </columns>
+                </TableView>
+                <TextField fx:id="MainScreenPartSearchBox" layoutX="139.0" layoutY="10.0" onKeyPressed="#OnKeyPartSearch" promptText="Search by Part ID or Name" />
+                <Button fx:id="MainPartAddButton" layoutX="165.0" layoutY="262.0" mnemonicParsing="false" onAction="#OnActionMainPartAdd" text="Add" />
+                <Button fx:id="MainPartModifyButton" layoutX="219.0" layoutY="262.0" mnemonicParsing="false" onAction="#OnActionMainPartModify" text="Modify" />
+                <Button fx:id="MainPartDeleteButton" layoutX="291.0" layoutY="262.0" mnemonicParsing="false" onAction="#OnActionMainPartDelete" text="Delete" />
+            <Button fx:id="MainPartsSearchButton" layoutX="305.0" layoutY="10.0" mnemonicParsing="false" onAction="#OnActionPartSearchButton" text="search" />
+            </children></AnchorPane>
+        <AnchorPane layoutX="400.0" layoutY="35.0" prefHeight="312.0" prefWidth="383.0" style="-fx-border-color: black; -fx-border-radius: 5;">
+            <children>
+                <Label layoutX="14.0" layoutY="14.0" text="Products" />
+                <TableView fx:id="MainProductsTable" layoutX="7.0" layoutY="43.0" prefHeight="200.0" prefWidth="364.0">
+                    <columns>
+                        <TableColumn fx:id="MainProductID" prefWidth="75.0" text="Product ID" />
+                        <TableColumn fx:id="MainProductName" prefWidth="86.0" text="Product Name" />
+                        <TableColumn fx:id="MainProductInv" prefWidth="93.0" text="Inventory Level" />
+                        <TableColumn fx:id="MainProductPrice" prefWidth="109.0" text="Price/Cost Per Unit" />
+                    </columns>
+                </TableView>
+                <Button fx:id="MainProductAddButton" layoutX="182.0" layoutY="262.0" mnemonicParsing="false" onAction="#OnActionMainProductAdd" text="Add" />
+                <Button fx:id="MainProductModifyButton" layoutX="236.0" layoutY="262.0" mnemonicParsing="false" onAction="#OnActionMainProductModify" text="Modify" />
+                <Button fx:id="MainProductDeleteButton" layoutX="299.0" layoutY="262.0" mnemonicParsing="false" onAction="#OnActionMainProductDelete" text="Delete" />
+                <TextField fx:id="MainScreenProductSearchBox" layoutX="142.0" layoutY="10.0" onKeyPressed="#OnKeyProductSearch" promptText="Search by Product ID or Name" />
+            <Button fx:id="MainProductSearchButton" layoutX="315.0" layoutY="10.0" mnemonicParsing="false" onAction="#OnActionProductSearchButton" text="search" />
+            </children></AnchorPane>
+        <Button fx:id="MainScreenExit" layoutX="690.0" layoutY="352.0" mnemonicParsing="false" onAction="#OnActionMainExit" text="Exit" />
+        <Label layoutX="14.0" layoutY="14.0" text="Inventory Management System">
+            <font>
+                <Font size="18.0" />
+            </font></Label>
+    </children>
+</AnchorPane>

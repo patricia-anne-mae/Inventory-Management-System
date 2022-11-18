@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="459.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddPartController">
+    <children>
+        <Label layoutX="42.0" layoutY="38.0" text="Add Part">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <RadioButton fx:id="AddPartScreenInHouse" layoutX="154.0" layoutY="41.0" mnemonicParsing="false" onAction="#OnActionAddPartSelectInHouse" selected="true" text="In-House">
+            <toggleGroup>
+                <ToggleGroup fx:id="tgroup" />
+            </toggleGroup></RadioButton>
+        <RadioButton fx:id="AddPartScreenOutsourced" layoutX="269.0" layoutY="41.0" mnemonicParsing="false" onAction="#OnActionAddPartSelectOutsourced" text="Outsourced" toggleGroup="$tgroup" />
+        <Label layoutX="42.0" layoutY="101.0" text="ID" />
+        <Label layoutX="42.0" layoutY="136.0" text="Name" />
+        <Label layoutX="42.0" layoutY="168.0" text="Inventory" />
+        <Label layoutX="42.0" layoutY="200.0" text="Price" />
+        <Label layoutX="42.0" layoutY="233.0" text="Max" />
+        <Label fx:id="AddaPartIdLabel" layoutX="42.0" layoutY="265.0" text="Machine ID" />
+        <TextField fx:id="AddPartScreenID" disable="true" editable="false" layoutX="155.0" layoutY="97.0" prefHeight="26.0" prefWidth="124.0" promptText="Auto Gen - Disabled">
+            <font>
+                <Font name="System Italic" size="12.0" />
+            </font></TextField>
+        <TextField fx:id="AddPartScreenName" layoutX="155.0" layoutY="132.0" prefHeight="26.0" prefWidth="124.0" />
+        <TextField fx:id="AddPartScreenInv" layoutX="155.0" layoutY="164.0" prefHeight="26.0" prefWidth="124.0" />
+        <TextField fx:id="AddPartScreenPrice" layoutX="155.0" layoutY="196.0" prefHeight="26.0" prefWidth="124.0" />
+        <TextField fx:id="AddPartScreenMax" layoutX="155.0" layoutY="229.0" prefHeight="26.0" prefWidth="124.0" />
+        <TextField fx:id="AddPartScreenMachineID" layoutX="155.0" layoutY="261.0" prefHeight="26.0" prefWidth="124.0" />
+        <Label layoutX="290.0" layoutY="233.0" text="Min" />
+        <TextField fx:id="AddPartScreenMin" layoutX="320.0" layoutY="230.0" prefHeight="26.0" prefWidth="124.0" />
+        <Button fx:id="AddPartScreenSave" layoutX="232.0" layoutY="326.0" mnemonicParsing="false" onAction="#OnActionAddPartSave" text="Save" />
+        <Button fx:id="AddPartScreenCancel" layoutX="302.0" layoutY="326.0" mnemonicParsing="false" onAction="#OnActionAddPartCancel" text="Cancel" />
+    </children>
+</AnchorPane>
