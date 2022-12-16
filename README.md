@@ -96,3 +96,6 @@ G.  Write code to implement input validation and logical error checks using a di
 •   The application will not crash when inappropriate user data is entered in the forms; instead, error messages should be generated.
 
 H.  Provide a folder containing Javadoc files that were generated from the IDE or via the command prompt from part B. In a comment above the main method header declaration, please specify where this folder is located.
+
+
+<img width="795" alt="Screen Shot 2022-12-15 at 9 16 21 PM" src="https://user-images.githubusercontent.com/105693602/208027745-479fb7d5-7fa5-4f83-8ab2-81faaa88d503.png">
